@@ -1,0 +1,49 @@
+h1{ /*Financial Aid.html styles*/
+
+ color: darkmagenta;
+ font-size: x-large;
+ text-align: justify;
+ text-decoration: underline;
+}
+p{
+
+    color: rgb(33, 33, 91);
+    font-size: large;
+    background-color: aliceblue;
+    font-size: x-large;
+}
+h2{
+
+    color: darkmagenta;
+    font-size: x-large;
+    font-style: oblique;
+
+}
+p1{
+    font-size: x-large;
+    background-color: aliceblue;
+}
+li{
+    color: navy;
+    font-size:x-large ;
+}
+p2{
+font-size: larger;
+}
+li{
+    color: navy;
+    font-size:x-large ;
+}
+p3{
+    font-size: larger; 
+}
+li{
+    color: navy;
+    font-size:x-large ;
+}
+p4{
+    font-size: larger; 
+}
+
+/*ContactUs.html styles*/
+
