@@ -1,4 +1,10 @@
-h1{ /*Financial Aid.html styles*/
+
+body{/*Financial Aid.html styles*/
+    background-image: url(Images/Background/bb2.jpg)
+}
+
+
+h1{ 
 
  color: darkmagenta;
  font-size: x-large;
@@ -12,6 +18,7 @@ p{
     background-color: aliceblue;
     font-size: x-large;
 }
+
 h2{
 
     color: darkmagenta;
@@ -19,7 +26,7 @@ h2{
     font-style: oblique;
 
 }
-p1{
+p {
     font-size: x-large;
     background-color: aliceblue;
 }
@@ -30,20 +37,211 @@ li{
 p2{
 font-size: larger;
 }
-li{
-    color: navy;
-    font-size:x-large ;
-}
+
+
 p3{
     font-size: larger; 
 }
-li{
-    color: navy;
-    font-size:x-large ;
-}
+
+
 p4{
     font-size: larger; 
 }
 
 /*ContactUs.html styles*/
 
+body style{
+    background-color: rgba(255, 192, 203, 0.918)
+}
+h1{
+    font-size: x-large;
+    color: darkorange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+
+}
+p1{
+     font-size: x-large;
+    color: darkmagenta;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    font-size: large;
+    color:navy;
+}
+
+h2{
+    font-size: large;
+    color: navy;
+    font-style: oblique;
+}
+/*Collaboration.html*/
+body{
+    background-color: aliceblue;
+
+}
+h1{
+    font-size: x-large;
+    color:purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:underline;
+    
+}
+h2{
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: turquoise;
+    
+}
+p1{
+    padding: 0ch;
+    font-size: larger;
+    background-color:lightyellow;
+}
+li{
+    font-size: x-large;
+    color: blueviolet;
+    
+
+}
+/*about.html*/
+ body{
+    background-color: white;
+ }
+ h1{
+    text-align: justify;
+    color:darkorange;
+ }
+
+p1{
+    font-size:large ;
+}
+h2{
+    font-size:xx-large ;
+    text-align: justify;
+    color: darkorange;
+}
+h3{
+    font-size: xx-large;
+    text-align:justify ;
+    color: darkorange;
+}
+p3{
+    font-size:large;
+}
+h4{
+    color: darkorange;
+    font-size: xx-large;
+}
+h5{
+    color: darkorange;
+    font-size: xx-large;
+}
+
+p4{
+    font-size:large;
+}
+p5{
+   
+    font-size:large; 
+}
+/*index.html*/
+body{
+    background-color: aliceblue;
+}
+
+h1{
+
+
+text-align:left;
+font-size: x-large;
+color:lightseagreen;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-transform: uppercase;
+text-decoration: wavy;
+
+}
+h2{
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva,Verdana, sans-serif;
+    line-height: 25px;
+    font-size: medium;
+    font-style: italic;
+    color:blueviolet;
+    
+}
+h3{
+font-size: medium;
+font-style: oblique;
+
+font-size: medium;font-style: oblique;
+}
+
+li{
+    font-size: medium;font-style: oblique;
+}
+
+/*about.html*/
+body{
+    background-color:cornsilk;
+}
+h1{
+    
+    text-align: left ;
+    color: darkorange;
+    text-decoration: underline;
+    font-size: medium;background-color: beige;font-size:x-large;font-style: oblique;
+
+}
+p{
+    font-size: medium;
+    background-color: beige;
+    font-size:x-large;
+    font-style: oblique;
+
+}
+h2{
+    color: darkcyan;
+    font-style: oblique;
+    font-size: x-large;
+    text-decoration: double;
+
+}
+p2{
+    font-size: larger;
+}
+p4{
+    font-size: medium;
+    background-color: beige;
+    font-size:x-large;
+    font-style: oblique;
+    color: darkorange;
+}
+li{
+    font-size:larger;
+    color: navy;
+    
+
+}
+li{
+    font-size: larger;
+    color: darkcyan;
+}
+p{
+    font-size: medium;
+    background-color: beige;
+    font-size:x-large;font-style: oblique;
+    color: darkorange;
+
+}
+li{
+    font-size: larger;
+    color:black;
+}
+p11{
+    font-size: medium;
+}
+div{
+     other:courses;
+}
