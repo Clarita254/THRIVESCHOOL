@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+
+.topnav{
+    background-color: antiquewhite;  
+   overflow:hidden;
+  }
+  .topnav a{
+      color:rgb(61,59,57);
+      float:left;
+      display:block;
+      text-decoration:underline;
+      text-align: left;
+      padding:14px 16px;
+  }
+  .topnav a:hover{
+      color: #373737;
+      background-color: aliceblue;
+      text-decoration:underline;
+  }
+  .topnav-right{
+      float:right;
+  }
+.bgcolor{
+    background-color: rgb(255, 240, 243);
+}
+
+
+.footer{
+    background-color: rgb(45,75,89,20%);
+    padding: 20px;
+    text-align: center;
+    font: size 0.7em;
+}
+
+
+
+ 
+
+
