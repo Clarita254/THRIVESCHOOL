@@ -56,6 +56,7 @@ li{
 <div class="div">
     <h1>||Nurturing People into Tech||</h1>
     <!--Heading One-->
+    <button type="button" class="collapsible">Open Collapsible</button>
  <h2 >Welcome to our page|THE THRIVE EDUCATION CENTRE|</h2>
  <div class="Images">
     <div class="rounded">
@@ -66,14 +67,36 @@ li{
 </div>
  </div>
  
+ <div class="content">
 <h3 > Through market aligned skills Training,we are able to excellent career opportunities and capabilities!</h3>
 <li>Discover </li>  <li >Learn</li><li>Transform</li> <li>Apply</li>
+</div>
 
+<!----->
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+</script>
 <div class="footer">
     Copyright -Thrive Education Centre &copy;- Allrights Reserved
 </div>
 
+
 </div>
-  
 </body>
 </html>
