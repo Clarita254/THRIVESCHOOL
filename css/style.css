@@ -36,6 +36,23 @@ body{
     display: grid;
 }
 
- 
+.rounded{
+    
+    border-radius: 15px 20px;
+   
+}
 
+.multiplecolumn{
+    div{
 
+        column-count: 3;
+        column-gap: 40px;
+        column-rule-style:solid ;
+        column-rule-style: rule width 1px; 
+        column-rule-color:lightblue ;
+        column-rule: 1 px solid lightblue;
+        column-width: 100px;
+
+    }
+    
+}
