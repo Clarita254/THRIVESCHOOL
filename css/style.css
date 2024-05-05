@@ -19,9 +19,7 @@ body{
       background-color: aliceblue;
       text-decoration:underline;
   }
-  .topnav-right{
-      float:right;
-  }
+  
 .bgcolor{
     background-color: rgb(255, 240, 243);
 }
@@ -34,7 +32,9 @@ body{
     font: size 0.7em;
 }
 
-
+.container{
+    display: grid;
+}
 
  
 
