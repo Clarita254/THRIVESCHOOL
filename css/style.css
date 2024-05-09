@@ -8,7 +8,7 @@ body{
   }
   /*Styling links inside the navigation bar*/
   .topnav a{
-      color:rgb(56, 8, 59);
+      color:rgb(105, 4, 110);
       float:left;
       display:block;
       text-decoration:underline;
@@ -92,8 +92,8 @@ body{
 }
 /*Styling the button that is used to open and close collapsible content*/
 .collapsible{
-    background-color: #eee;
-    color: #444;
+    background-color: #fefefe;
+    color: #580745;
     cursor: pointer;
     padding: 18px;
     width:100% ;
