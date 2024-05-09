@@ -21,6 +21,10 @@ body{
       background-color: aliceblue;
       text-decoration:underline;
   }
+
+  .topnav-right{
+    float:right;
+  }
  
   /*The dropdown container*/
   .dropdown{
@@ -55,7 +59,7 @@ body{
     float:none;
     color:black;
     padding:12px 16px;
-    texr-decoration:none;
+    text-decoration:none;
     display:block;
     text-align:left;
   }
