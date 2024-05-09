@@ -37,13 +37,13 @@ body{
     font-size:16px;
     border:none;
     outline:none;
-    color:rgb(133, 6, 80);
+    color:rgb(22, 237, 104);
     padding:14px 16px;
     background-color:inherit;
     font-family: inherit;
 }
 .dropdown:hover ,dropbtn{
-    background-color: red;
+    background-color: rgb(230, 36, 244);
 }
   /*Dropdown content */
   .dropdown-content{
