@@ -1,10 +1,10 @@
-/*The dropdown container*/
-.dropdown{
+ /*The dropdown container*/
+ .dropdown{
     float:left;
     overflow:hidden;
   }  
-/*Dropdown button*/
-.dropdown .dropbtn{
+  /*Dropdown button*/
+  .dropdown .dropbtn{
     font-size:16px;
     border:none;
     outline:none;
@@ -12,10 +12,10 @@
     padding:14px 16px;
     background-color:inherit;
     font-family: inherit;
-}
-.dropdown:hover ,dropbtn{
+  }
+  .dropdown:hover ,dropbtn{
     background-color: rgb(230, 36, 244);
-}
+  }
   /*Dropdown content */
   .dropdown-content{
     display:none;
@@ -24,7 +24,7 @@
     min-width:160px;
     box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
     z-index:1;
-
+  
   }
   /*links inside the dropdown*/
   .dropdown-content a{
