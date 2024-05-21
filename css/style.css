@@ -19,7 +19,7 @@ body{
   /*Change color of links on hover*/
   .topnav a:hover{
       color: #373737;
-      background-color: aliceblue;
+      background-color: rgb(171, 32, 138);
       text-decoration:underline;
   }
 
@@ -291,7 +291,14 @@ font-weight:bold;
 
 
 /*Table styling*/
+#courseCatalog{
+padding:20px;
+background-color: rgba(255,255,255,0.8);
+border-radius:10px;
+margin:20px auto;
+max-width:800px;
 
+}
 .Course{
   border:solid 1px #373737;
   width:70%;
