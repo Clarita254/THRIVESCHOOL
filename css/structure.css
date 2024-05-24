@@ -5,7 +5,7 @@ body{
 
  
 .bgcolor{
-    background-color: rgb(255, 240, 243);
+    background-color: rgb(227, 214, 216);
 }
 
 
@@ -20,6 +20,7 @@ body{
 .rounded{
     
     border-radius: 15px 20px;
+    
    
 }
 /*Styling the button that is used to open and close collapsible content*/
@@ -62,3 +63,4 @@ background-color: #ccc;
 
       }
   }
+  

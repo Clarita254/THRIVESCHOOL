@@ -160,12 +160,3 @@ font-weight:bold;
 /*Code for SignIn page ends here*/
 
 
-/*Table styling*/
-#courseCatalog{
-padding:20px;
-background-color: rgba(255,255,255,0.8);
-border-radius:10px;
-margin:20px auto;
-max-width:800px;
-
-}
