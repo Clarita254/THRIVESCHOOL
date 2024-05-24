@@ -12,8 +12,37 @@ input[type=text],input[type=email], input[type=password]{
 
 
 }
-#header{
-  background-color: aquamarine;
+
+/*Registration Form*/
+
+.box-sizing{
+  width:60%;
+  margin:0 auto;
+  padding:20px;
+  border:2px solid rgb(102, 37, 112);
+  border-radius:10px;
+  background-color:aliceblue;
+  box-sizing:border-box;
+}
+#registrationform{
+display:flex;
+flex-direction: column;
+}
+.label,input,select{
+margin-top: 15px;
+font-size:medium;
+}
+input[type="submit"]{
+  width:20%;
+  padding:5px;
+  background-color:palevioletred;
+  color: white;
+  border:none;
+  border-radius: 5px;
+  cursor:pointer;
+}
+input[type="submit"]:hover{
+  background-color: darkviolet;
 }
 /*Adding a background color when the input gets focus*/
 input[type=text]:focus, input[type=password]:focus{
