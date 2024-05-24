@@ -12,6 +12,9 @@ input[type=text],input[type=email], input[type=password]{
 
 
 }
+#header{
+  background-color: aquamarine;
+}
 /*Adding a background color when the input gets focus*/
 input[type=text]:focus, input[type=password]:focus{
  background-color:#ddd;
