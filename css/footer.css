@@ -61,7 +61,7 @@
         text-decoration: none;
         font-size:1.5em;
     }
-    .footer-social-icon:hover{
+    .footer-social-icon .social-icon:hover{
 color:#ffd700;
     }
     .footer-copyright{
