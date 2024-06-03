@@ -6,30 +6,31 @@
     position:relative; 
 
 }
-.footer-container{
+
+@media (max-width:600px){
+    .footer-container{
 
 
-    display:flex;
-    max-width:1200px;
-    margin:0 auto;
-    padding:20px;
-    justify-content: space-between;/*Distribite space evenly beterrn columns*/
-    flex-wrap: wrap;/*Help handle smaller screens*/
-
+        display:flex;
+        max-width:1200px;
+        margin:0 auto;
+        padding:20px;
+        justify-content: space-between;/*Distribite space evenly beterrn columns*/
+        flex-wrap: wrap;/*Help handle smaller screens*/
+    
+    }
 }
+
 .footer-column{/*margin between columns*/
     flex:1;
     margin:0 10px;
     
 }
-.footer-column.get-in-touch{
-    border-right:2px solid #fff;
-    padding-right:10px;
-}
-.footer-column.company{
+.footer-column.get-in-touch ,.footer-column.company{
     border-right:2px solid #fff;
     padding-right:10px;/*To avoid touching the border*/
 }
+
 .footer-column.quicklinks{
     padding-left:10px;
 }
