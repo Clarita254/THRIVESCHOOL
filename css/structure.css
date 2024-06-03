@@ -14,7 +14,8 @@ body{
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font: size 0.7em;
-    position: bottom;
+    position:relative; 
+
 }
 .footer-container{
 
@@ -23,15 +24,25 @@ body{
     max-width:1200px;
     margin:0 auto;
     padding:20px;
+    justify-content: space-between;/*Distribite space evenly beterrn columns*/
+    flex-wrap: wrap;/*Help handle smaller screens*/
 
 }
 .footer-column{/*margin between columns*/
     flex:1;
     margin:0 10px;
-
+    
 }
-.footer-column company{
-    border-right:1px solid #fff;
+.footer-column.get-in-touch{
+    border-right:2px solid #fff;
+    padding-right:10px;
+}
+.footer-column.company{
+    border-right:2px solid #fff;
+    padding-right:10px;/*To avoid touching the border*/
+}
+.footer-column.quicklinks{
+    padding-left:10px;
 }
 .footer-column h4{/*space below heading and font size*/
     margin-bottom: 15px;
@@ -43,6 +54,7 @@ body{
  text-decoration: none;
 }
 
+
 .footer-column a:hover{
     text-decoration: underline;
 }
@@ -51,9 +63,11 @@ body{
     font-size: medium;
     text-align:center;
     padding-top:20px;
-    border-top: 1px solid #fff;
     margin-top:20px;
-}
+   
+    width:100%;
+    }
+
 
 .rounded{
     
