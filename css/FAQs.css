@@ -5,13 +5,14 @@ body{
     padding:0;
 
 }
+/* Set the background image and size*/
 .faq-header{
     position:relative;
     width:100%;
     height:300px;
     background:url('Images/People/pp36');
 }
-
+/*Adds a dark overlay and centers the title using flexbox*/
 .faq-overlay{
     position:absolute;
     top:0;
