@@ -30,32 +30,34 @@ body{
     margin:0 10px;
 
 }
+.footer-column company{
+    border-right:1px solid #fff;
+}
 .footer-column h4{/*space below heading and font size*/
     margin-bottom: 15px;
     font-size:1.2em;
 }
-.footer-column p{
-
-    margin: 5px 0;
+.footer-column p, .footer-column a{
+ margin: 5px 0;
+ color:#fff;
+ text-decoration: none;
 }
-.footer-column a{
 
-    color:#fff;
-    text-decoration: none;
-}
 .footer-column a:hover{
     text-decoration: underline;
 }
 
-#copyright{
+.footer-copyright{
     font-size: medium;
     text-align:center;
+    padding-top:20px;
+    border-top: 1px solid #fff;
+    margin-top:20px;
 }
 
 .rounded{
     
-    border-radius: 15px 20px;
-    
+    border-radius: 15px 20px;  
    
 }
 
