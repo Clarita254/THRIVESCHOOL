@@ -12,5 +12,6 @@
     <div class="footer-copyright">
         <p>Copyright -Thrive Education Centre &copy;- Allrights Reserved</p>
     </div>
-
+    </body>
+    </html>
 </footer>

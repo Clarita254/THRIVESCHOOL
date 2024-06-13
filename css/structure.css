@@ -71,4 +71,6 @@ background-color: #ccc;
     color: rgb(238, 238, 238);
 }
 
-  
+.container{
+    padding-bottom: 10px;
+}

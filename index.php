@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<?php include_once("templates/header.php");?>
+    
+
 <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
 
     <style>
         h1{
@@ -36,18 +35,12 @@ li{
     font-style: oblique;
 }
 
-p1{
-    color: black;
-    font-size:1.2em;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
 
-}
 .div{
 padding-bottom:5px;
 }
     </style>
-    
-</head>
+
 <body class="bgcolor">
 
 
@@ -79,5 +72,3 @@ padding-bottom:5px;
 </div>
 
 <?php include_once("templates/footer.php");?>
-</body>
-</html>
