@@ -28,7 +28,7 @@ p1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 h2{
-    font-size: large;
+    font-size:medium;
     color:navy;
     font-style: oblique;
 }
@@ -39,9 +39,10 @@ h2{
 <body >
     <?php include_once("templates/nav.php");?>
 
-    <h1 style=>CONTACT US</h1>
 
-    <p1 style=>Do you want to know more about us?We would love to hear from you.Hear is how you can reach us.</p1>
+    <h1 >CONTACT US</h1>
+
+    <p1>Do you want to know more about us?We would love to hear from you.Hear is how you can reach us.</p1>
 <!--End of Contact Us information-->
 <div class="rounded">
     <img src="Images/People/pp23.jpg"width="40%" class="rounded">

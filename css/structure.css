@@ -62,8 +62,13 @@ background-color: #ccc;
 
       }
   }
-     
+     /*Index page css*/
 
-
+.header{
+    padding: 20px;
+    text-align: center;
+    background-color: #373737;
+    color: rgb(238, 238, 238);
+}
 
   

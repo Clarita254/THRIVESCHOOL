@@ -25,7 +25,7 @@ p{
     background-color: aliceblue;
     
 }
-    p1{
+    p4{
         font-size:medium;
         background-color: aliceblue;
     }
@@ -60,7 +60,7 @@ p{
 <!--Purpose of the financial Aid-->
 <h1 >Aim of the financial Aid </h1>
 
-<p1 >The Aim of our financial Aid Program is to make the courses offered and skills training done in the Thrive Education Centre accessible to people who would otherwise miss out opportunities due to current financial constraints.With the presence of Student Financing,we can help you navigate around your fees so you can concentrate on your education.This includes:<br></p1>
+<p4 >The Aim of our financial Aid Program is to make the courses offered and skills training done in the Thrive Education Centre accessible to people who would otherwise miss out opportunities due to current financial constraints.With the presence of Student Financing,we can help you navigate around your fees so you can concentrate on your education.This includes:<br></p4>
 <!--Ways of offering financial Aid-->
   <li > Low-Interest Loans</li>
   <p2 >The school is partnerning  with financial institutions to offer low interest loans specifically designed for students.</p2>
