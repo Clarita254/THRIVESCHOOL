@@ -18,6 +18,12 @@
     </style>
 </head>
 <body>
+
+    <?php include_once("templates/nav.php");?>
+
+
+
+
     <!---Button to open the modal login form-->
     <button onclick="document.getElementById('id01').style.display='block'">
  Login</button>

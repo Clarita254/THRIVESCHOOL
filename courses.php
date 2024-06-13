@@ -85,39 +85,7 @@ padding-bottom: 20px;
 
 
 <body>
-    <div class="topnav" >
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="courses.html">Courses</a>
-        <a href="financialAid.html">FinancialAid</a>
-        <a href="ContactUs.html">ContactUs</a>
-        <a href="Collaborating.html">Collaborating</a>
-       
-
-
-        <div class="topnav-right">
-            <a href="SignUp.html">SignUp</a>
-            <a href="SignIn.html">SignIn</a>
-            
-    
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown
-             
-             <i class="fa fa-caret -down"></i>
-         
-             </button>
-             <div class="dropdown-content">
-                
-                 <a href="FAQs.html">FAQs</a>
-                 <a href="CourseCatalog.html">CoursesCatalog</a>
-
-         
-         
-             </div>
-         </div>
-
-    </div>
+    <?php include_once("templates/nav.php");?>
     <h1>Courses</h1>
     <div class="div">
     <p >Are you Interested in Learning Software Development?</p>
