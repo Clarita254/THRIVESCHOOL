@@ -65,56 +65,7 @@
 
 </script>
 
-<!--footer--->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column get-in-touch">
-    <h4>Get in Touch </h4>
-    <p> General inquiries (+254)711-087-278</p>
-    <p>contact@thriveeducationcentre.com</p>
-    <p>Working Hours</p>
-    <p>Monday-Friday  9:00am-5:30pm</p>
-    <p>Saturday 9:00am-1:00pm</p>
-
-    <p>Hurligham Lane,Hurligham Plaza,4th floor,Nairobi Kenya</p>
-    
-        </div>
-    
-        <div class="footer-column company">
-            <h4>Company</h4>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="about.html">About</a></p>
-            <p><a href="Courses.html">Courses</a></p>
-            <p><a href="FinancialAid.html">FinancialAid</a></p>
-            <p><a href="ContactUs.html">ContactUs</a></p>
-            <p><a href="Collaborating.html">Collaborating</a></p>
-            <p><a href="Registration.html">Registration</a></p>
-            <p><a href="CourseCatalog.html">CourseCatalog</a></p>
-            
-        </div>
-    
-        <div class="footer-column quick=links">
-            <h4>Quick Links</h4>
-            <p><a href="FAQs.html">FAQs</a></p>
-            <p><a href="SignUp.html">SignUp</a></p>
-            <p><a href="SignIn.html">SignIn</a></p>
-            
-        </div>
-    
-        <div class="footer-social-icons">
-            <p1>Social Media||</p1>
-            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-        </div>
-        
-        <div class="footer-copyright">
-            <p>Copyright -Thrive Education Centre &copy;- Allrights Reserved</p>
-        </div>
-        
-    </div>
-    </footer>
+<?php include_once("templates/footer.php");?>
 
 </body>
 </html>

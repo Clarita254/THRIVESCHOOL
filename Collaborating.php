@@ -103,55 +103,7 @@ p3{
 </div>
 </div>
 
-    <!--footer--->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column get-in-touch">
-    <h4>Get in Touch </h4>
-    <p3> General inquiries (+254)711-087-278</b></p3>
-    <p3>contact@thriveeducationcentre.com<br></p3>
-    <p3>Working Hours<br<</p>
-    <p3>Monday-Friday  9:00am-5:30pm<br></p3>
-    <p3>Saturday 9:00am-1:00pm<br></p3>
+<?php include_once("templates/footer.php");?>
     
-    <p3>Hurligham Lane,Hurligham Plaza,4th floor,Nairobi Kenya<br></p3>
-    
-        </div>
-    
-        <div class="footer-column company">
-            <h4>Company</h4>
-            <p3><a href="index.html">Home</a><br></p3>
-            <p3><a href="about.html">About</a><br></p3>
-            <p3><a href="Courses.html">Courses</a><br></p3>
-            <p3><a href="FinancialAid.html">FinancialAid</a><br></p3>
-            <p3><a href="ContactUs.html">ContactUs</a></p3>
-            <p3><a href="Collaborating.html">Collaborating</a><br></p3>
-            <p3><a href="Registration.html">Registration</a><br></p3>
-            <p3><a href="CourseCatalog.html">CourseCatalog</a><br></p3>
-            
-        </div>
-    
-        <div class="footer-column quick=links">
-            <h4>Quick Links</h4>
-            <p3><a href="FAQs.html">FAQs</a><br></p3>
-            <p3><a href="SignUp.html">SignUp</a><br></p3>
-            <p3><a href="SignIn.html">SignIn</a><br></p3>
-            
-        </div>
-    
-        <div class="footer-social-icons">
-            <p1>Social Media||</p1>
-            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-        </div>
-        
-        <div class="footer-copyright">
-            <p>Copyright -Thrive Education Centre &copy;- Allrights Reserved</p>
-        </div>
-        
-    </div>
-    </footer>
 </body>
 </html>
