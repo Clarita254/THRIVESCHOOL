@@ -14,7 +14,7 @@
         display:flex;
         max-width:1200px;
         margin:0 auto;
-        padding:20px;
+        padding:10px;
         justify-content: space-between;/*Distribite space evenly beterrn columns*/
         flex-wrap: wrap;/*Help handle smaller screens*/
     
@@ -72,4 +72,9 @@ color:#ffd700;
         margin-top:20px;
        
         width:100%;
+        }
+
+
+        .footer-column.get-in-touch p3{
+            margin-bottom:10px;
         }
