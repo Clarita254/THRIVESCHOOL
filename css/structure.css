@@ -24,8 +24,8 @@ body{
       }
 /*Styling the button that is used to open and close collapsible content*/
 .collapsible{
-    color:#ffd700;;
-    color: #580745;
+    background-color:#290d23;;
+    color: #fff;
     cursor: pointer;
     padding: 18px;
     width:50% ;
@@ -62,4 +62,8 @@ background-color: #ccc;
 
       }
   }
+     
+
+
+
   

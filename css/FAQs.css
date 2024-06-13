@@ -5,6 +5,9 @@ body{
     padding:0;
 
 }
+h1{
+    background-color: navy;
+}
 /* Set the background image and size*/
 .faq-header{
     position:relative;
