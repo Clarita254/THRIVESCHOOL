@@ -1,3 +1,4 @@
+
 <?php include_once("templates/header.php");?>
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -5,7 +6,7 @@
 
 <body class="bgColor">
     
->    <?php include_once("templates/nav.php");?>
+   <?php include_once("templates/nav.php");?>
 
 
   <div id="courseCatalog">  

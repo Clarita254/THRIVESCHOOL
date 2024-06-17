@@ -1,4 +1,5 @@
 <?php include_once("templates/header.php");?>
+
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -25,9 +26,7 @@ h3{
 p2{
     font-size:large;
 }
-.container{
-    padding-bottom: 10px;
-}
+
 
     </style>
 

@@ -64,6 +64,41 @@ background-color: #ccc;
   }
      /*Index page css*/
 
+     .index-h1{
+            text-align:left;
+            font-size: x-large;
+            color:lightseagreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: uppercase;text-decoration: wavy;
+
+     }
+
+     .index-h2{
+
+        text-align:justify;
+        font-family:'Segoe UI', Tahoma, Geneva,Verdana, sans-serif;
+        line-height:25px;
+        font-size:medium;
+        font-style:italic;
+        color:blueviolet;
+
+     }
+
+     .index-h3{
+        font-size: medium;
+        font-style: oblique;
+        color: rgb(33, 33, 91);
+     }
+     .index{
+
+        font-size: medium;
+        font-style: oblique; 
+    }
+
+    .div{
+        padding-bottom:5px;
+    }
+     /*ContactUs CSS*/
 .header{
     padding: 20px;
     text-align: center;
@@ -73,4 +108,12 @@ background-color: #ccc;
 
 .container{
     padding-bottom: 10px;
+}
+/*Course CSS*/
+.Image{
+    display: flex;
+    size-adjust: 40px 20px;
+}
+.rounded-circle{
+    border-radius: 10px;
 }

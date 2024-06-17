@@ -56,13 +56,7 @@ h4{
     text-decoration: double;
 
 }
-.Image{
-    display: flex;
-    size-adjust: 40px 20px;
-}
-.rounded-circle{
-    border-radius: 10px;
-}
+
 .div{
     
     column-count: 3;

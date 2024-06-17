@@ -3,7 +3,7 @@ function toggleFAQ(element){
     const faqAnswer=faqItem.querySelector('.faq-answer');
     const faqIcon=faqItem.querySelector('.faq-icon');
 
-    if(faqAnwer.style.display=='block'){
+    if(faqAnswer.style.display=='block'){
         faqAnswer.style.display='none';
         faqIcon.textContent='+';
         faqItem.classList.remove('active');
