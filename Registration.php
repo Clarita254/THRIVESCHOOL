@@ -1,5 +1,8 @@
-    
-<?php include_once("templates/header.php");?>
+   
+   
+   <?php require_once("includes/db_connect.php");?>
+  <?php include_once("templates/header.php");?> 
+  <?php include_once("templates/nav.php");?>
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
@@ -32,7 +35,7 @@ p2{
 
 <body >
 
-    <?php include_once("templates/nav.php");?>
+    
     <h1 >Registration</h1>
     
         <div class="box-sizing">
