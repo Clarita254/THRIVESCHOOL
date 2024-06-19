@@ -60,14 +60,14 @@ font-style: oblique;
     <!--header -->
  
 <div class="div">
-    <div class="index-h1">
+    
     <h1>||Nurturing People into Tech||</h1>
     <!--Heading One-->
-</div>
 
-<div class= "index-h2">
+
+
  <h2 >Welcome to our page|THE THRIVE EDUCATION CENTRE|</h2>
-</div>
+
  <div class="rounded">
     
     <img src="Images/People/pp1.jpg"width=30% class="rounded">
@@ -77,13 +77,11 @@ font-style: oblique;
 
  </div>
  
- <div class="index-h3">
+ 
 <h3 > Through market aligned skills Training,we are able to excellent career opportunities and capabilities!</h3>
-</div>
 
-<div class="index-h4">
 <li>Discover </li>  <li >Learn</li><li>Transform</li> <li>Apply</li>
-</div>
+
 
 <br>
 </div>

@@ -166,3 +166,22 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+DROP TABLE IF EXISTS `responses`;
+CREATE TABLE IF NOT EXISTS `responses` (
+  `responseId` int(1) NOT NULL AUTO_INCREMENT,
+  `sender_firstname` varchar(60) NOT NULL DEFAULT '',
+  `sender_lastname` varchar(60) NOT NULL DEFAULT '',
+  `sender_email` varchar(60) NOT NULL DEFAULT '',
+  `sender_phonenumber` varchar(30) NOT NULL DEFAULT '',
+  `sender_DOB` varchar(60) NOT NULL DEFAULT '',
+  `sender_Gender` varchar(20) NOT NULL DEFAULT '',
+  `sender_Course` text,
+  `sender_Intake`text,
+  `sender_Review`text,
+  `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `dateupdated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`responseId`),
+  
+) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+

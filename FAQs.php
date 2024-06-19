@@ -57,7 +57,9 @@
 
 </div>
 <!--ToggleFAQ is used to show and hide the answers when questions are clicked -->
-<script src="javascript/script.js">
+<script >
+
+
 
 </script>
 
