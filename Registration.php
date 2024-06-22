@@ -33,7 +33,7 @@
       VALUES ('$firstName', '$lastName', '$Email_Address','$PhoneNumber','$Date_of_Birth','$Gender','$course','$Intake','$Review')";
 
      if ($conn->query($insert_responses) === TRUE) {
-    header("Location:registration.php");
+    header("Location:view_responses.php");
     exit();
     } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -120,25 +120,33 @@ p2{
 <option value="Mobile App Development">Mobile App Development</option>
 <option value="CyberSecurity">CyberSecurity</option>
 <option value="DataScience">DataScience</option>
+<option value="Statistical Analysis">Statistical Analysis</option>
+<option value="Graphic Design">Graphic Design</option>
+<option value="Web Design">Web Design</option>
+<option value="Python Programming">Python Programming</option>
+<option value="C# Programming">C# Programming</option>
+<option value="Certified Ethical">Certified Ethical Hacking</option>
+<option value="Computer Network Defender">Computer Network Defender</option>
+<option value="Computer Hacking Forensics Investigator">Computer Network Defender</option>
 
   
 </select>
 
 <br><br>
 <!--Select intake-->
-<label for="Intake"required>Intake:</label><br>
-    <input type="radio"id="Intake"name="Intake"placeholder="">
+<label for="IntakeJanuary"required>Intake:</label><br>
+<input type="radio"id="IntakeJanuary"name="Intake"value="January">
+<label for="IntakeJanuary">January</label>
 
-    <label for="January">January</label>
-    <input type="radio"id="January"name="Intake"placeholder="January">
 
-    <label for="April">April</label>
-    <input type="radio"id="April"name="Intake"placeholder="April">
+<input type="radio"id="IntakeApril"name="Intake"value="April">
+<label for="IntakeApril">April</label>
 
-   <label for="July">July</label>
-    <input type="radio"id="July"name="Intake"placeholder="July">
-
-    <label for="October">October</label>
+<input type="radio"id="IntakeJuly"name="Intake"value="July">
+<label for="IntakeJuly">July</label>
+    
+ <input type="radio" id="IntakeOctober" name="Intake"value="October">
+ <label for="IntakeOctober">October</label><br>
    
 
 <br><br>

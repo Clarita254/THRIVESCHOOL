@@ -10,7 +10,7 @@
     </div>
     
     <div class="footer-copyright">
-        <p>Copyright -Thrive Education Centre &copy;- Allrights Reserved</p>
+        <p>Copyright &copy;<?php print date("Y");?>-Thrive Education Centre- Allrights Reserved</p>
     </div>
     </body>
     </html>
