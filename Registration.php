@@ -125,7 +125,7 @@ p2{
 <option value="Web Design">Web Design</option>
 <option value="Python Programming">Python Programming</option>
 <option value="C# Programming">C# Programming</option>
-<option value="Certified Ethical">Certified Ethical Hacking</option>
+<option value="Certified Ethical Hacking">Certified Ethical Hacking</option>
 <option value="Computer Network Defender">Computer Network Defender</option>
 <option value="Computer Hacking Forensics Investigator">Computer Network Defender</option>
 
