@@ -45,8 +45,8 @@
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-.header{
-    font-size: xx-large;
+.header-h1{
+    font-size: x-large;
     color:lightseagreen;
     text-decoration: underline;
 }
@@ -74,7 +74,7 @@ p2{
 
 <body >
 
-    <div class= "header">
+    <div class= "header-h1">
     <h1 >Registration</h1>
 </div>
         <div class="box-sizing">
@@ -162,6 +162,7 @@ p2{
     <div id="ConfirmationMessage"style="display:none;color:green;">Details saved successfully!</div>
 
 </form>
+
 
 <?php include_once("templates/footer.php");?>
 
