@@ -7,7 +7,6 @@
     <a href="Collaborating.php">Collaborating</a>
     <a href="Registration.php">Registration</a>
     <a href="view_responses.php">View Responses</a>
-    <a href="edit_resp.php">Update Responses</a>
     
     
     <div class="topnav-right">

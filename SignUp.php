@@ -30,14 +30,30 @@
         <h1>Sign Up</h1>
         <p> Please fill in this form to create an account.</p>
         <hr>
+
+ 
+<label for ="fullname"><b>Fullname</b></label>
+<input type="text"placeholder="fullname"name="fullname"required>
+
+<label for ="Username"><b>Username</b></label>
+<input type="text"placeholder="Username"name="Username"required><br>
+       
 <label for ="email"><b>Email</b></label>
 <input type="text"placeholder="Email Address"name="email"required>
+
+<label for="userType"><b>UserType</b></label>
+<input type="userType" placeholder="userType"name = "userType" required><br>
+
+
+
 <!----->
 <label for="password"><b>Password</b></label>
-<input type="password" placeholder="Password"name = "password" required>
+<input type="password" placeholder="Password"name = "password" required><br>
+
+
 <label for ="password-repeat"><b>Repeat Password</b></label>
 <input type="password" placeholder="Repeat Password"name="password-repeat"required>
-<label>
+
 <input type="checkbox"checked="checked"name="remember" style="margin-bottom: 15px">Remember me 
 
 </label>

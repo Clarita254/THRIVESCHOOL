@@ -181,7 +181,7 @@ CREATE TABLE IF NOT EXISTS `responses` (
   `sender_Review`text,
   `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
   `dateupdated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  PRIMARY KEY (`responseId`),
+  PRIMARY KEY (`responseId`)
   
 ) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -189,12 +189,13 @@ CREATE TABLE IF NOT EXISTS `responses` (
 DROP TABLE IF EXISTS `SignUp`;
 CREATE TABLE IF NOT EXISTS `SignUp` (
   `userId` bigint(11) NOT NULL AUTO_INCREMENT,
+  `fullname` varchar(50) NOT NULL DEFAULT '',
+  `username` varchar(50) NOT NULL DEFAULT '',
   `emailAddress` varchar(50) NOT NULL DEFAULT '',
+  `userType` varchar(30) NOT NULL DEFAULT '',
   `password` varchar(60) NOT NULL DEFAULT '',
-  `repeat password` varchar(60) NOT NULL DEFAULT '',
   `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
   `dateupdated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`userId`),
-  UNIQUE KEY `emailAddress` (`emailAddress`),
-  UNIQUE KEY `userName` (`userName`)
+  UNIQUE KEY (`userName`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
