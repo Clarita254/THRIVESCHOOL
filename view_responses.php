@@ -2,6 +2,34 @@
       require_once("includes/db_connect.php");
       include_once("templates/header.php");
      include_once("templates/nav.php");
+
+
+
+
+
+if(isset($_GET["DelId"])){
+$DelId=mysqli_real_escape_string($conn,$GET["DelId"]);
+
+
+     // sql to delete a record
+$del_resp = "DELETE FROM `responses` WHERE responseId='$DelId' LIMIT 1";
+
+if ($conn->query($del_resp) === TRUE) {
+  header("Location:view_responses.php");
+  exit();
+} else {
+  echo "Error deleting record: " . $conn->error;
+}
+
+}
+
+
+
+
+
+
+
+
 ?>
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -39,6 +67,9 @@
        <th>sender_Intake</th>
        <th>sender_Review</th>
        <th>Time</th>
+       <th>Actions</th>
+
+
 </tr>
 </thead> 
 
@@ -67,6 +98,7 @@ if ($sel_resp_result->num_rows > 0) {
         <td><?php print $sel_resp_row["sender_Intake"]?></td>
         <td><?php print $sel_resp_row["sender_Review"]?></td>
         <td><?php print date("d-M-Y H:i",strtotime( $sel_resp_row["datecreated"]));?></td>
+        <td>[<a href="edit_resp.php?responseId=<?php print $sel_resp_row["responseId"];?>">Edit</a>] [ <a href="?DelId=<?php print $sel_resp_row["responseId"]; ?>">Del</a>]</td>
         </tr>
 
    <?php

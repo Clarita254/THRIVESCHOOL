@@ -57,11 +57,10 @@
 
 </div>
 <!--ToggleFAQ is used to show and hide the answers when questions are clicked -->
-<script >
+<script src="js/script.js"></script>
 
 
 
-</script>
 
 <?php include_once("templates/footer.php");?>
 
