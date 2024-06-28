@@ -3,13 +3,13 @@ function toggleFAQ(element){
     const faqAnswer=faqItem.querySelector('.faq-answer');
     const faqIcon=faqItem.querySelector('.faq-icon');
 
-    if(faqAnswer.style.display=='block'){
-        faqAnswer.style.display='none';
+    if(faqAnswer.classList.contains('visible')){
+        faqAnswer.classList.remove('visible');
         faqIcon.textContent='+';
         faqItem.classList.remove('active');
 
     }else{
-        faqAnswer.style.display = 'block';
+        faqAnswer.classList.add( 'visible');
         faqIcon.textContent= '-';
         faqItem.classList.add('active');
     }

@@ -4,7 +4,17 @@
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<style>
+@media screen and(max-width:768px){
+    .faq-container{
+        flex-direction:column;
+    }
+    .faq-item{
+        margin-bottom:1rem;
+    }
+}
 
+</style>
 
 <body>
     
@@ -63,4 +73,3 @@
 
 
 <?php include_once("templates/footer.php");?>
-
