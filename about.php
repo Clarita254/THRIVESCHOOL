@@ -35,6 +35,46 @@ p2{
     <?php include_once("templates/nav.php");?>
     
 
+<div class="team-container">
+<div class="team-member">
+
+<img src="Images/People/pp39.jpg">
+<div class="member-info">
+<h>Wallace </h>
+<p>Chief Executive Officer</p>
+</div>
+
+</div>
+<!---->
+<div class="team-member">
+    <img src="Images/People/pp37.jpg">
+    <div class="member-info">
+   <h>Virginiah</h>   
+   <p>Managing Director </p>  
+</div>
+</div>
+<!----->
+<div class="team-member">
+    <img src="Images/People/pp38.jpg">
+    <div class="member-info">
+        <h> Franklin</h>
+        <p>HR Manager</p>
+</div>
+</div>
+<!---->
+<div class="team-member">
+<img src>
+<div class="member-info">
+<h>Mary</h>
+        <p>HOD Training</p>
+</div>
+
+</div>
+
+</div>
+
+<sricpt src="js.script.js"></script>
+
 <div class="container">
     
     <!--Vision Statement-->
