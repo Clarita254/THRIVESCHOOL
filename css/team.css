@@ -29,11 +29,29 @@
     bottom:0;
     width:100%
 }
-.member-info h{
+.member-info h4{
     margin:0;
     font-size:1.2em;
 }
 .member-info p{
     margin: 5px 0 0;
     font-size:0.9em;
+}
+
+
+.prev,.next{
+    background-color:#fff;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    transform:translate(-50%);
+    z-index:1;
+}
+.prev{
+left:10px;
+}
+.next{
+    right:10px;
 }

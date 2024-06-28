@@ -36,28 +36,29 @@ p2{
     
 
 <div class="team-container">
+    <button class="prev">&laquo;</button>
 <div class="team-member">
 
-<img src="Images/People/pp39.jpg">
+<img src="Images/People/pp39.jpg"width="40%">
 <div class="member-info">
-<h>Wallace </h>
+<h4>Wallace </h4>
 <p>Chief Executive Officer</p>
 </div>
 
 </div>
 <!---->
 <div class="team-member">
-    <img src="Images/People/pp37.jpg">
+    <img src="Images/People/pp37.jpg"width="40%">
     <div class="member-info">
-   <h>Virginiah</h>   
+   <h4>Virginiah</h4>   
    <p>Managing Director </p>  
 </div>
 </div>
 <!----->
 <div class="team-member">
-    <img src="Images/People/pp38.jpg">
+    <img src="Images/People/pp38.jpg"width="40%">
     <div class="member-info">
-        <h> Franklin</h>
+        <h4> Franklin</h4>
         <p>HR Manager</p>
 </div>
 </div>
@@ -65,15 +66,15 @@ p2{
 <div class="team-member">
 <img src>
 <div class="member-info">
-<h>Mary</h>
+<h4>Mary</h4>
         <p>HOD Training</p>
 </div>
 
 </div>
 
 </div>
+<button class="next">&raquo;</button>
 
-<sricpt src="js.script.js"></script>
 
 <div class="container">
     
@@ -139,6 +140,38 @@ As Thrive Education Centre looks into the future,Its committment to excellence,I
         }
       });
     }
+    </script>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded',()=>{
+    const teamContainer=document.querySelector('.team-container');
+    const members=document.querySelectorAll('.team-member');
+    let currentIndex=0;
+
+    function showMember(index){
+        members.forEach((member,i)=>{
+            member.style.display=i===index? 'block':'none';
+
+        });
+    }
+
+    showMember(currentIndex);
+
+    document.querySelector('prev').addEventListener('click',()=>{
+        currentIndex=(currentIndex >0)? currentIndex -1 :members.length -1;
+
+
+        showMember(currentIndex);
+
+    });
+    document.querySelector('.next').addEventListener('click',()=>{
+        currentIndex=(currentIndex <members.length -1)? currentIndex +1 :0;
+showMember(currentIndex);
+});
+
+});
     </script>
 <!---- include_once is used for reusing code-->
 <?php include_once("templates/footer.php");?>
