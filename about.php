@@ -1,6 +1,7 @@
 <?php include_once("templates/header.php");?>
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
     <style>
@@ -39,7 +40,7 @@ p2{
     <button class="prev">&laquo;</button>
 <div class="team-member">
 
-<img src="Images/People/pp39.jpg"width="40%">
+<img src="Images/People/pp39.jpg"alt="Team Member Wallace">
 <div class="member-info">
 <h4>Wallace </h4>
 <p>Chief Executive Officer</p>
@@ -48,7 +49,7 @@ p2{
 </div>
 <!---->
 <div class="team-member">
-    <img src="Images/People/pp37.jpg"width="40%">
+    <img src="Images/People/pp37.jpg"alt="Team Member Virginiah">
     <div class="member-info">
    <h4>Virginiah</h4>   
    <p>Managing Director </p>  

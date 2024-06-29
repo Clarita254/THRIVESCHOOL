@@ -1,6 +1,9 @@
 .team-container{
     display:flex;
     gap:20px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+    justify-content:space-around
 }
 
 .team-member{
@@ -10,6 +13,9 @@
     overflow:hidden;
     text-align:center;
     transition:transform 0.3s ease;
+    padding:10px;
+    color:#333;
+
 }
 
 .team-member:hover{
@@ -17,7 +23,9 @@
 }
 
 .team-member img{
-    width:100%;
+    width:80%;
+    border-radius:50%;
+    margin-bottom:10px;
     height:auto;
 }
 
@@ -32,6 +40,7 @@
 .member-info h4{
     margin:0;
     font-size:1.2em;
+    color:#333;
 }
 .member-info p{
     margin: 5px 0 0;
@@ -54,4 +63,16 @@ left:10px;
 }
 .next{
     right:10px;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        flex: 1 1 100%;
+    }
 }
