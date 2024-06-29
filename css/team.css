@@ -3,7 +3,7 @@
     gap:20px;
     margin-bottom:20px;
     flex-wrap:wrap;
-    justify-content:space-around
+    justify-content:center;
 }
 
 .team-member{
@@ -15,6 +15,8 @@
     transition:transform 0.3s ease;
     padding:10px;
     color:#333;
+    flex: 1 1 calc(25% - 20px);/*Ajusted to ensure four items per row*/
+    max-width:250px;
 
 }
 
@@ -23,7 +25,7 @@
 }
 
 .team-member img{
-    width:80%;
+    width:100%; /*Adjusted to ensure image fills the container*/ 
     border-radius:50%;
     margin-bottom:10px;
     height:auto;
@@ -40,7 +42,7 @@
 .member-info h4{
     margin:0;
     font-size:1.2em;
-    color:#333;
+    color:#fff;
 }
 .member-info p{
     margin: 5px 0 0;
@@ -48,31 +50,16 @@
 }
 
 
-.prev,.next{
-    background-color:#fff;
-    border:none;
-    padding:10px;
-    cursor:pointer;
-    position:absolute;
-    top:50%;
-    transform:translate(-50%);
-    z-index:1;
-}
-.prev{
-left:10px;
-}
-.next{
-    right:10px;
-}
+
 
 @media (max-width: 768px) {
     .team-member {
-        flex: 1 1 calc(45% - 20px);
+        flex: 1 1 calc(45% - 20px);/*Adjust for smaller screens*/
     }
 }
 
 @media (max-width: 480px) {
     .team-member {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /*Adjust for mobile screens*/
     }
 }

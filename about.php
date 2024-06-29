@@ -1,8 +1,6 @@
 <?php include_once("templates/header.php");?>
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
 
     <style>
 
@@ -34,47 +32,52 @@ p2{
 <body class="bgcolor">
 <!---- include_once is used for reusing code-->
     <?php include_once("templates/nav.php");?>
-    
+    <div class="team-description">
+    <h3>Our Team </h3>
+    <p1>Get to know  the passionate and dedicated individuals who make ThriveEducation Centre a success.Our Team is here to partner with you and provide the right solutions for your success.<br></p1>
+
+</div> 
 
 <div class="team-container">
-    <button class="prev">&laquo;</button>
+
+
 <div class="team-member">
 
-<img src="Images/People/pp39.jpg"alt="Team Member Wallace">
+<img src="Images/People/pp39.jpg"alt=" James Smith"width="40%">
 <div class="member-info">
-<h4>Wallace </h4>
+<h4>James Smith </h4>
 <p>Chief Executive Officer</p>
 </div>
 
 </div>
 <!---->
 <div class="team-member">
-    <img src="Images/People/pp37.jpg"alt="Team Member Virginiah">
+    <img src="Images/People/pp46.jpg"alt="Sophia Miller">
     <div class="member-info">
-   <h4>Virginiah</h4>   
+   <h4>Sophia Miller</h4>   
    <p>Managing Director </p>  
 </div>
 </div>
 <!----->
 <div class="team-member">
-    <img src="Images/People/pp38.jpg"width="40%">
+    <img src="Images/People/pp48.jpg"alt="Roberto Johnson">
     <div class="member-info">
-        <h4> Franklin</h4>
+        <h4>Roberto Johnson</h4>
         <p>HR Manager</p>
 </div>
 </div>
 <!---->
 <div class="team-member">
-<img src>
-<div class="member-info">
-<h4>Mary</h4>
+    <img src="Images/People/pp43.jpg"alt="Rosa Luengo"width="40%">
+    <div class="member-info">
+        <h4>Rosa Luengo</h4>
         <p>HOD Training</p>
 </div>
+</div>
+
 
 </div>
 
-</div>
-<button class="next">&raquo;</button>
 
 
 <div class="container">
@@ -144,36 +147,7 @@ As Thrive Education Centre looks into the future,Its committment to excellence,I
     </script>
 
 
-<script>
 
-document.addEventListener('DOMContentLoaded',()=>{
-    const teamContainer=document.querySelector('.team-container');
-    const members=document.querySelectorAll('.team-member');
-    let currentIndex=0;
-
-    function showMember(index){
-        members.forEach((member,i)=>{
-            member.style.display=i===index? 'block':'none';
-
-        });
-    }
-
-    showMember(currentIndex);
-
-    document.querySelector('prev').addEventListener('click',()=>{
-        currentIndex=(currentIndex >0)? currentIndex -1 :members.length -1;
-
-
-        showMember(currentIndex);
-
-    });
-    document.querySelector('.next').addEventListener('click',()=>{
-        currentIndex=(currentIndex <members.length -1)? currentIndex +1 :0;
-showMember(currentIndex);
-});
-
-});
-    </script>
 <!---- include_once is used for reusing code-->
 <?php include_once("templates/footer.php");?>
 
