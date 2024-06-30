@@ -70,3 +70,12 @@ body{
     display:block
 ;
 }
+
+@media screen  and (max-width:768px){
+    .faq-container{
+        flex-direction:column;
+    }
+    .faq-item{
+        margin-bottom:1rem;
+    }
+}

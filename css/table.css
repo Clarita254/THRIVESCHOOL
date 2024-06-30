@@ -24,6 +24,7 @@
     border:solid 1px #373737;
      padding: 10px;
      text-align:left;
+     
   }
   .Course th{
     background-color:rgba(126, 13, 109, 0.9);
@@ -33,9 +34,11 @@
   }
   .Course tr:nth-child(odd){
   background-color:aliceblue;
+  width:5%;
   }
   .Course tr:nth-child(even){
     background-color:rgba(145, 223, 232, 0.797) ;
+    width:5%;
     }
     
   .Course tr:hover{

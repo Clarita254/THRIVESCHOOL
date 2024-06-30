@@ -41,6 +41,21 @@ if ($conn->query($del_resp) === TRUE) {
        color:lightseagreen;
        text-decoration: underline;
 }
+
+.Course th:nth-child(1),
+    .Course td:nth-child(1) {
+        width: 5%; /* SerialNumber column width */
+    }
+
+    .Course th:nth-child(2),
+    .Course td:nth-child(2) {
+        width: 10%; /* sender_firstName column width */
+    }
+
+    .Course th:nth-child(3),
+    .Course td:nth-child(3) {
+        width: 10%; /* sender_lastName column width */
+    }
         </style>
     <body class="bgColor">
     <div class= "header-h1">
