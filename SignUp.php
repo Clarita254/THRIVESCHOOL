@@ -2,16 +2,31 @@
 
 <?php include_once("templates/header.php");?>
 <?php include_once("templates/nav.php");?>
-   
-
-<?php require_once("includes/db_connect.php");?>
 
 
+<style>
+h1{
+text-align:center;
+margin-bottom:20px;
+color:lightseagreen;
+}
+
+p{
+display:block;
+margin-bottom:5px;
+font-size: large;
+color:black;
+
+}
+p1{
+    padding-bottom:20px;
+}
+    </style>
 <body>
+<div class="container">
+<form action="action_page.php">
     
-<form action="action_page.php"style="border:1px solid #ccc">
-    <div class="container">
-<div id=SignUp-h2>      
+<div id=SignUp-h1>      
 <h1> Sign Up </h1>
 <div>
 
@@ -20,26 +35,26 @@
 <hr>
 
 <label for ="fullname"><b>Fullname</b></label>
-<input type="text"placeholder="fullname"name="fullname"required>
+<input type="text" name="fullname"id="fullname"placeholder="Fullname" required><br><br>
 
 <label for ="Username"><b>Username</b></label>
-<input type="text"placeholder="Username"name="Username"required><br>
-       
+<input type="text" name="Username"id="username"placeholder="Username" required><br><br>
+
 <label for ="email"><b>Email</b></label>
-<input type="text"placeholder="Email Address"name="email"required>
+<input type="text"name="email"id="Email"placeholder="Email Address"required>
 
 <label for="userType"><b>UserType</b></label>
-<input type="userType" placeholder="userType"name = "userType" required><br>
+<input type="text"name="userType"id="usertype" placeholder="userType" required><br>
 
 
 
 <!----->
 <label for="password"><b>Password</b></label>
-<input type="password" placeholder="Password"name = "password" required><br>
+<input type="password"name="password"id="password"placeholder="Password" required><br>
 
 
-<label for ="password-repeat"><b>Repeat Password</b></label>
-<input type="password" placeholder="Repeat Password"name="password-repeat"required>
+<label for ="Confirm-password"><b>Confirm Password</b></label>
+<input type="password"name="confirm-password"id="confirm password"placeholder="Confirm Password"required>
 
 
 <input type="checkbox"checked="checked"name="remember"style="margin-bottom:15px">Remember me </label>
@@ -49,9 +64,10 @@
     <button type="button" class="cancelbutton">Cancel</button>
     <button type="submit" class="signUpbutton">SignUp</button>
  </div>
- </div>
+ 
  </form>
-<p class="account-info">Already have an account?<a href="SignIn.php">SignIn</a></p>
+ </div>
+<p1 class="account-info">Already have an account?<a href="SignIn.php">SignIn</a></p1>
     
 </body>
 

@@ -32,32 +32,15 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background-color: darkviolet;
 }
+
+
 /*Code for SignUp page starts here*/
-#SignUp{
-  width:50%;
-  margin:0 auto;
-  padding:20px;
-  background-color:rgba(255,255,255,0.8);
-  border-radius:5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
 
-}
-
-#SignUp-h2{
-  text-align:center;
-  margin-bottom:20px;
-  color:navy
-}
-#SignUp-Form-label{
-display:block;
-margin-bottom:5px;
-
-}
 /*Full-width input fields*/
 input[type=text],input[type=password]{
-  width:100%;
-  padding:15px;
+  width:40%;
+  padding:10px;
   margin:5px 0 22px 0;
   display:inline-block;
   border:none;
@@ -69,6 +52,7 @@ input[type=text]:focus,input[type=password]:focus{
   outline:none;
 
 }
+
 hr{
   border:1px solid #f1f1f1;
   margin-bottom:25px;
@@ -81,7 +65,7 @@ padding:14px 20px;
 margin:8px 0;
 border:none;
 cursor:pointer;
-width: 50%;
+width: 30%;
 opacity:0.9;
 }
 button:hover{
@@ -98,6 +82,7 @@ opacity:1;
 .cancelbutton,.signupbutton{
   float:left;
   width:30%;
+  padding-bottom: 10px;
 }
 /*Add padding to container elements*/
 .container{
@@ -111,7 +96,7 @@ opacity:1;
     box-sizing:border-box;
 
 }
-/*claear floats*/
+/*clear floats*/
 .clearfix::after{
 content:"";
 clear:both;
