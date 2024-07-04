@@ -6,7 +6,7 @@
 
 <style>
 h1{
-text-align:center;
+text-align:centre;
 margin-bottom:20px;
 color:lightseagreen;
 }
@@ -18,42 +18,41 @@ font-size: large;
 color:black;
 
 }
-p1{
-    padding-bottom:20px;
-}
+
     </style>
 <body>
+
+<div class="header">
+<h1> Sign Up </h1> 
+</div>
+
 <div class="container">
 <form action="action_page.php">
     
-<div id=SignUp-h1>      
-<h1> Sign Up </h1>
-<div>
-
 <p id="SignUp-Form-label">Please fill in this form to create an account </p>
    
 <hr>
 
-<label for ="fullname"><b>Fullname</b></label>
-<input type="text" name="fullname"id="fullname"placeholder="Fullname" required><br><br>
+<label for ="fullname"><b>Fullname:</b></label>
+<input type="text" name="fullname"id="fullname"placeholder="Fullname" required><br>
 
-<label for ="Username"><b>Username</b></label>
-<input type="text" name="Username"id="username"placeholder="Username" required><br><br>
+<label for ="Username"><b>Username:</b></label>
+<input type="text" name="Username"id="username"placeholder="Username" required><br>
 
-<label for ="email"><b>Email</b></label>
-<input type="text"name="email"id="Email"placeholder="Email Address"required>
+<label for ="email"><b>Email:</b></label>
+<input type="email"name="email"id="Email"placeholder="Email Address"required><br>
 
-<label for="userType"><b>UserType</b></label>
+<label for="userType"><b>UserType:</b></label>
 <input type="text"name="userType"id="usertype" placeholder="userType" required><br>
 
 
 
 <!----->
-<label for="password"><b>Password</b></label>
+<label for="password"><b>Password:</b></label>
 <input type="password"name="password"id="password"placeholder="Password" required><br>
 
 
-<label for ="Confirm-password"><b>Confirm Password</b></label>
+<label for ="Confirm-password"><b>Confirm Password:</b></label>
 <input type="password"name="confirm-password"id="confirm password"placeholder="Confirm Password"required>
 
 
@@ -67,8 +66,10 @@ p1{
  
  </form>
  </div>
-<p1 class="account-info">Already have an account?<a href="SignIn.php">SignIn</a></p1>
-    
+
+ <div class="account-info">
+<p1>Already have an account?<a href="SignIn.php">SignIn</a></p1>
+</div>
 </body>
 
 <?php require_once("templates/footer.php");?>
