@@ -1,40 +1,24 @@
 <?php require_once("includes/db_connect.php");?>
 
 <?php include_once("templates/header.php");?>
-    <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<?php include_once("templates/nav.php");?>
+   
 
-    <style>
+<?php require_once("includes/db_connect.php");?>
 
-        h1{
-            font-family:Arial, Helvetica, sans-serif;
-            
-        }
-        p{
-            font-style:inherit;
-            font-size: large;
-        }
-    </style>
 
 <body>
-
-<?php include_once("templates/nav.php");?>
-
-    <!--Button to open the model-->
-    <button onclick="document.getElementById('id01').style.display='block'" >Sign Up </button>
     
-    <!---The Modal(contains the sign Up form)-->
-    <div id ="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close"title="Close Modal"></span>
-
-<form action="user_processes.php"method="POST"autocomplete="off">
-<form class="modal-content"action="/action_page.php">
-
+<form action="action_page.php"style="border:1px solid #ccc">
     <div class="container">
-        <h1>Sign Up</h1>
-        <p> Please fill in this form to create an account.</p>
-        <hr>
+<div id=SignUp-h2>      
+<h1> Sign Up </h1>
+<div>
 
- 
+<p id="SignUp-Form-label">Please fill in this form to create an account </p>
+   
+<hr>
+
 <label for ="fullname"><b>Fullname</b></label>
 <input type="text"placeholder="fullname"name="fullname"required>
 
@@ -57,36 +41,19 @@
 <label for ="password-repeat"><b>Repeat Password</b></label>
 <input type="password" placeholder="Repeat Password"name="password-repeat"required>
 
-<input type="checkbox"checked="checked"name="remember" style="margin-bottom: 15px">Remember me 
 
-</label>
-
-<p>By creating an account you agree to our <a href="#" style="color: dodgerblue;"> Terms & Privacy</a>.</p>
+<input type="checkbox"checked="checked"name="remember"style="margin-bottom:15px">Remember me </label>
+<p>By creating an account you agree to our<a href="SignUp.php" style="color:dodgerblue">Terms and Privacy</a></p>
 
 <div class="clearfix">
-    <button type="button"onclick="document.getElementById('id01').style.display='none'" class="cancelButton">Cancel </button>
-
-    <button type="submit"class="signup">Sign Up</button>
-
-
-</div>
+    <button type="button" class="cancelbutton">Cancel</button>
+    <button type="submit" class="signUpbutton">SignUp</button>
  </div>
-</form>
-    </form>
-</div>
-
-<script>
-    //Get modal
-    var modal=document.getElementById('id01');
-
-    //When the user clicks anywhere outside of the modal,It closes
-    window.onclick=function(event){
-        if(event.target==modal){
-            modal.style.display="none";
-        }
-    }
-</script>
-
+ </div>
+ </form>
+<p class="account-info">Already have an account?<a href="SignIn.php">SignIn</a></p>
+    
 </body>
 
+<?php require_once("templates/footer.php");?>
 

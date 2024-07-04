@@ -1,17 +1,4 @@
-/*Sign-Up form*/
-*{box-sizing: border-box;}
 
-/*Full-width input fields*/
-input[type=text],input[type=email], input[type=password]{
- width:30%;
- padding:3px;
- margin: 5px 0 22px 0;
- display:inline-block;
- border:none;
- background: #f1f1f1;
-
-
-}
 
 /*Registration Form*/
 
@@ -45,96 +32,98 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background-color: darkviolet;
 }
-/*Adding a background color when the input gets focus*/
-input[type=text]:focus, input[type=password]:focus{
- background-color:#ddd;
- outline:none;
-}
-/*Setting a style for all buttons*/
-button{
- background-color:#6a0a6f;
- color:white;
- padding:14px 20px;
- margin: 8px 0;
- border:none;
- cursor:pointer;
- width:100%;
- opacity:0.9; 
-}
- button:hover{
-   opacity:1;
+/*Code for SignUp page starts here*/
+#SignUp{
+  width:50%;
+  margin:0 auto;
+  padding:20px;
+  background-color:rgba(255,255,255,0.8);
+  border-radius:5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
- }
- .cancelbutton{
-   padding:14px 20px;
-
- }
- /*Float cancel and signup buttons and adding an equal width*/
- .cancelButton, .signupbutton{
-float:left;
-width:50%;
-
- }
-.container{
- padding:16px;
-}
-/*Modal Background*/
-.modal{
- display:none;
- position:fixed;
- /*To be on top*/
- z-index:1;
- left:0;
- top:0;
- width:100%;/*Full width*/
- height:100%;/*full height*/
- overflow: auto;
- background: color #474e5d;
- padding-top:50px;
 
 }
-/*Modal ContentBox*/
-.modal-content{
- background-color: #fefefe;
- margin:5% auto 15% auto;/*5% from the top , 15% from the bottom and centred*/
- border:1px solid #888;
- width:80%;
+
+#SignUp-h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:navy
 }
-/*Styling the horizontal ruler*/
+#SignUp-Form-label{
+display:block;
+margin-bottom:5px;
+
+}
+/*Full-width input fields*/
+input[type=text],input[type=password]{
+  width:100%;
+  padding:15px;
+  margin:5px 0 22px 0;
+  display:inline-block;
+  border:none;
+  background:#f1f1f1;
+
+}
+input[type=text]:focus,input[type=password]:focus{
+  background-color:#ddd;
+  outline:none;
+
+}
 hr{
- border:1px solid #f1f1f1;
- margin-bottom:25px;
+  border:1px solid #f1f1f1;
+  margin-bottom:25px;
+}
+/*set a style for all buttons*/
+button{
+background-color:#04AA6D;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+cursor:pointer;
+width: 50%;
+opacity:0.9;
+}
+button:hover{
+opacity:1;
 
 }
-/*The close button (X)*/
-.close{
- position:absolute;
- right:35px;
- top:15px;
- font-size:40px;
- font-weight:bold;
- color:#f1f1f1;
+/*Extra styles for cancel button*/
+.cancelbutton{
+  padding:14px 20px;
+  background-color:#f44336;
 
 }
-.close:hover,
-.close:focus{
- color:#f44336;
- cursor:pointer;
+/*float cancel and signUp buttons and add an equal width*/
+.cancelbutton,.signupbutton{
+  float:left;
+  width:30%;
 }
-/*floats*/
+/*Add padding to container elements*/
+.container{
+  padding:16px;
+    width:50%;
+    margin:0 auto;
+    padding:20px;
+    border:2px solid rgb(255, 255,255,0.8);
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    box-sizing:border-box;
+
+}
+/*claear floats*/
 .clearfix::after{
- content:"";
- clear:both;
- display:table;
+content:"";
+clear:both;
+display:table;
 
 }
-/*Change styles for cancel button and sign up button on extra small screens*/
+/*Change styles for cancel button and signup button on extra small screens*/
 @media screen and (max-width:300px){
- .cancelButton, .signupbutton{
-   width:100%
- }
+  .cancelbutton,.signupbutton{
+    width:100%;
+  }
 }
-
 /*Code for SignIn page starts here*/
 /*The Moodal background*/
 .modal{

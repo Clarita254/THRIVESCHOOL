@@ -28,7 +28,7 @@
 
 
     <!--Modal Content-->
-<form class="modal-content animate"action="/action_page.php">
+<form class="modal-content animate"action="/action_page.php" action="user_processes.php"method="POST" autocomplete="off">
     <div class="imgcontainer">
         <img src="Images/People/img_avatar6.png"alt="Avatar" class="avatar">
         <img src="Images/People/img_avatar2.png"alt="Avatar" class="avatar">

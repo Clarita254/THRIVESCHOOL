@@ -14,3 +14,7 @@ function toggleFAQ(element){
         faqItem.classList.add('active');
     }
 }
+
+
+
+
