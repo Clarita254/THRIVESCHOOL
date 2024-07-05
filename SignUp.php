@@ -14,9 +14,50 @@ color:lightseagreen;
 p{
 display:block;
 margin-bottom:5px;
-font-size: large;
+font-size: x-large;
 color:black;
 
+}
+p1{
+    font-size:large;
+}
+
+.header{
+  padding: 20px;
+  padding-bottom:10px;
+  text-align: center;
+  background-color:rgb(102, 37, 112);
+  color:lightseagreen; 
+}
+
+
+/*set a style for all buttons*/
+button{
+background-color:darkmagenta;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+cursor:pointer;
+width: 30%;
+opacity:0.9;
+padding-left:20px;
+box-sizing:border-box;
+}
+/*float cancel and signUp buttons and add an equal width*/
+.cancelbutton,.signupbutton{
+  float:left;
+  width:calc(30%-5px);
+  padding-bottom: 10px;
+  padding-right:10px;
+}
+
+/*Extra styles for cancel button*/
+.cancelbutton{
+  padding:14px 20px;
+  background-color:darkmagenta;
+  padding-right:20px;
+margin-right:10px;
 }
 
     </style>
@@ -29,7 +70,7 @@ color:black;
 <div class="container">
 <form action="action_page.php">
     
-<p id="SignUp-Form-label">Please fill in this form to create an account </p>
+<p>Please fill in this form to create an account </p>
    
 <hr>
 
@@ -46,18 +87,17 @@ color:black;
 <input type="text"name="userType"id="usertype" placeholder="userType" required><br>
 
 
-
 <!----->
 <label for="password"><b>Password:</b></label>
 <input type="password"name="password"id="password"placeholder="Password" required><br>
 
 
 <label for ="Confirm-password"><b>Confirm Password:</b></label>
-<input type="password"name="confirm-password"id="confirm password"placeholder="Confirm Password"required>
+<input type="password"name="confirm-password"id="confirm password"placeholder="Confirm Password"required><br>
 
 
-<input type="checkbox"checked="checked"name="remember"style="margin-bottom:15px">Remember me </label>
-<p>By creating an account you agree to our<a href="SignUp.php" style="color:dodgerblue">Terms and Privacy</a></p>
+<input type="checkbox"checked="checked"name="remember"style="margin-bottom:15px">Remember me </label><br>
+<p1>By creating an account you agree to our <a href="SignUp.php" style="color:dodgerblue"> Terms and Privacy</a></p1>
 
 <div class="clearfix">
     <button type="button" class="cancelbutton">Cancel</button>
