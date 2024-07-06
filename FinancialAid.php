@@ -37,7 +37,7 @@ p{
 <body style="background-image: url(Images/Background/bb2.jpg);">
 
     <?php include_once("templates/nav.php");?>
-    <div class="container">
+    <div class="containerfinacialAid">
 
     <!--header title-->
     <h1 > Thrive Education Financial Aid <br></h1>

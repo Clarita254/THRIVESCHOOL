@@ -34,7 +34,7 @@
         <img src="Images/People/img_avatar2.png"alt="Avatar" class="avatar">
 
     </div>
-    <div class="container">
+    <div class="containerSignIn">
         <label for="Username"><b>Username</b></label>
         <input type="text"placeholder="Enter Username"name="Username" required>
 

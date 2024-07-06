@@ -8,7 +8,7 @@
 h1{
 text-align:centre;
 margin-bottom:20px;
-color:lightseagreen;
+color:white;
 }
 
 p{
@@ -26,8 +26,9 @@ p1{
   padding: 20px;
   padding-bottom:10px;
   text-align: center;
-  background-color:rgb(102, 37, 112);
-  color:lightseagreen; 
+  background-color:grey;
+  margin-bottom:10px;
+
 }
 
 
@@ -60,6 +61,18 @@ box-sizing:border-box;
 margin-right:10px;
 }
 
+/*Add padding to container elements*/
+.containerSignUp{
+  padding:16px;
+  width:50%;
+ margin:0 auto;
+  padding:20px;
+  background-color:#f5f5f5;
+  border-radius:5px;
+  border:2px solid lightseagreen;
+  border-style: grooves;
+}
+
     </style>
 <body>
 
@@ -67,7 +80,7 @@ margin-right:10px;
 <h1> Sign Up </h1> 
 </div>
 
-<div class="container">
+<div class="containerSignUp">
 <form action="action_page.php">
     
 <p>Please fill in this form to create an account </p>

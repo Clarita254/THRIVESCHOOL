@@ -80,7 +80,7 @@ p2{
 
 
 
-<div class="container">
+<div class="about">
     
     <!--Vision Statement-->
     

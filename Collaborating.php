@@ -57,7 +57,7 @@ p3{
 
     <?php include_once("templates/nav.php");?>
     
-    <div class="container">
+    <div class="containercollaborating">
     <div class="div">
     <h1 >COLLABORATION</h1>
     
