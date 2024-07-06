@@ -40,16 +40,16 @@ input[type="submit"]:hover{
 
 /*Full-width input fields*/
 input[type=text],input[type=email],input[type=password],select{
-  width:50%;
+  width:60%;
   padding:14 20px;
   font-size:medium;
   border-radius:4px;
   border:1px solid #424242;
   margin:8px  0;
   display:inline-block;
-  border:none;
   background:#FFFFFF;
   box-sizing: border-box;
+  
 
 }
 input[type=text]:focus,input[type=password]:focus{
@@ -88,6 +88,11 @@ display:table;
 }
 .account-info{
   padding-bottom:10px;
+}
+
+.error_form{
+  color:crimson;
+  font-size:small;
 }
 
 /*Change styles for cancel button and signup button on extra small screens*/

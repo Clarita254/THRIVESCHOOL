@@ -145,8 +145,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `userName` varchar(50) NOT NULL DEFAULT '',
   `emailAddress` varchar(50) NOT NULL DEFAULT '',
   `password` varchar(60) NOT NULL DEFAULT '',
-  `studentId` int(1) NOT NULL DEFAULT 0,
-  `instructorId` int(1) NOT NULL DEFAULT 0,
+  `roleId` int(1) NOT NULL DEFAULT 0,
   `genderId` int(1) NOT NULL DEFAULT 0,
   `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
   `dateupdated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
@@ -159,8 +158,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`userId`, `fullName`, `userName`, `emailAddress`, `password`, `studentId`, `instructorId`, `genderId`, `datecreated`, `dateupdated`) VALUES
-(1, '', '', '', '', 0, 0, 0, '2024-06-17 15:27:31', '2024-06-17 15:27:31');
+INSERT INTO `users` (`userId`, `fullName`, `userName`, `emailAddress`, `password`, `roleId`, `genderId`, `datecreated`, `dateupdated`) VALUES
+(1, '', '', '', '', 0, 0, '2024-06-17 15:27:31', '2024-06-17 15:27:31');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
@@ -186,16 +185,15 @@ CREATE TABLE IF NOT EXISTS `responses` (
 ) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-DROP TABLE IF EXISTS `SignUp`;
-CREATE TABLE IF NOT EXISTS `SignUp` (
-  `userId` bigint(11) NOT NULL AUTO_INCREMENT,
-  `fullname` varchar(50) NOT NULL DEFAULT '',
-  `username` varchar(50) NOT NULL DEFAULT '',
-  `emailAddress` varchar(50) NOT NULL DEFAULT '',
-  `userType` varchar(30) NOT NULL DEFAULT '',
-  `password` varchar(60) NOT NULL DEFAULT '',
+
+
+DROP TABLE IF EXISTS `Role`;
+CREATE TABLE IF NOT EXISTS `Role` (
+  `roleId` int(1) NOT NULL AUTO_INCREMENT,
+  `role` varchar(20) NOT NULL DEFAULT '',
   `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
   `dateupdated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  PRIMARY KEY (`userId`),
-  UNIQUE KEY (`userName`)
+  PRIMARY KEY (`roleId`),
+  UNIQUE KEY (`role`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
