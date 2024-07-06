@@ -1,0 +1,124 @@
+/*Code for SignUp page starts here*/
+
+
+/*Full-width input fields*/
+input[type=text],input[type=email],input[type=password],select{
+    width:60%;
+    padding:14 20px;
+    font-size:medium;
+    border-radius:4px;
+    border:1px solid #424242;
+    margin:8px  0;
+    display:inline-block;
+    background:#FFFFFF;
+    box-sizing: border-box;
+    
+  
+  }
+  input[type=text]:focus,input[type=password]:focus{
+    background-color:#ddd;
+    outline:none;
+  
+  }
+  input[type=submit],input[type=button]{
+    width:30%;
+    padding:14px 20px;
+    color:azure;
+    font-size:medium;
+    border-radius:4px;
+    border:none;
+    margin: 8px 0;
+    box-sizing:border-box;
+  }
+  
+  hr{
+    border:1px solid #f1f1f1;
+    margin-bottom:25px;
+  }
+
+
+  p.note{
+    font-size:large;
+}
+
+.header{
+  padding: 20px;
+  padding-bottom:10px;
+  text-align: center;
+  background-color:grey;
+  margin-bottom:10px;
+
+}
+
+
+/*set a style for all buttons*/
+button{
+background-color:darkmagenta;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+cursor:pointer;
+width: 30%;
+opacity:0.9;
+padding-left:20px;
+box-sizing:border-box;
+}
+/*float cancel and signUp buttons and add an equal width*/
+.cancelbutton,.signupbutton{
+  float:left;
+  width:calc(30%-5px);
+  padding-bottom: 10px;
+  padding-right:10px;
+}
+
+/*Extra styles for cancel button*/
+.cancelbutton{
+  padding:14px 20px;
+  background-color:darkmagenta;
+  padding-right:20px;
+margin-right:10px;
+}
+
+/*Add padding to container elements*/
+.containerSignUp{
+  padding:16px;
+  width:50%;
+ margin:0 auto;
+  padding:20px;
+  background-color:#f5f5f5;
+  border-radius:10px;
+  border:2px solid lightseagreen;
+  border-style: grooves;
+  
+}
+
+  
+  button:hover{
+  opacity:1;
+  
+  }
+  
+  
+  /*clear floats*/
+  .clearfix::after{
+  content:"";
+  clear:both;
+  display:table;
+  
+  }
+  .account-info{
+    padding-bottom:10px;
+  }
+  
+  .error_form{
+    color:crimson;
+    font-size:small;
+  }
+  
+  /*Change styles for cancel button and signup button on extra small screens*/
+  @media screen and (max-width:300px){
+    .cancelbutton,.signupbutton{
+      width:100%;
+    }
+  }

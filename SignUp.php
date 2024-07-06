@@ -44,61 +44,6 @@ font-size: x-large;
 color:black;
 
 }
-p.note{
-    font-size:large;
-}
-
-.header{
-  padding: 20px;
-  padding-bottom:10px;
-  text-align: center;
-  background-color:grey;
-  margin-bottom:10px;
-
-}
-
-
-/*set a style for all buttons*/
-button{
-background-color:darkmagenta;
-color:white;
-padding:14px 20px;
-margin:8px 0;
-border:none;
-cursor:pointer;
-width: 30%;
-opacity:0.9;
-padding-left:20px;
-box-sizing:border-box;
-}
-/*float cancel and signUp buttons and add an equal width*/
-.cancelbutton,.signupbutton{
-  float:left;
-  width:calc(30%-5px);
-  padding-bottom: 10px;
-  padding-right:10px;
-}
-
-/*Extra styles for cancel button*/
-.cancelbutton{
-  padding:14px 20px;
-  background-color:darkmagenta;
-  padding-right:20px;
-margin-right:10px;
-}
-
-/*Add padding to container elements*/
-.containerSignUp{
-  padding:16px;
-  width:50%;
- margin:0 auto;
-  padding:20px;
-  background-color:#f5f5f5;
-  border-radius:10px;
-  border:2px solid lightseagreen;
-  border-style: grooves;
-  
-}
 
     </style>
 <body>
@@ -123,7 +68,7 @@ margin-right:10px;
 <label for ="email"><b>EmailAddress:</b></label>
 <input type="email"name="email"maxlength="20"id="email"placeholder="Email Address"required><br>
 
-<?php if(isset($_GET["wrong_email_format"])){print "<span class='error_form'>wrong email format</span>";}?><br>
+<?php if(isset($_GET["wrong_email_format"])){print "<span class='error_form'>wrong email format</span>";}?>
 
 <label for=genderId>Gender:</label>
 <select name=genderId id="genderId"required>
