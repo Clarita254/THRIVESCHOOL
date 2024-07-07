@@ -133,6 +133,12 @@ INSERT INTO `students` (`studentId`, `studentName`, `courseName`, `emailAddress`
 (169388, 'James Mwangi', 'Graphic Design', 'jamesMwangi@thriveschool.com', 5, '2024-06-17 16:42:02', '2024-06-17 16:42:02');
 
 -- --------------------------------------------------------
+UPDATE `students` SET studentname='Ann Wambui' WHERE studentId=17214 LIMIT 1;
+
+SELECT*FROM `students` WHERE studentId= 167753 LIMIT 1;
+
+DELETE FROM `students` WHERE studentId=  17214 LIMIT 1;
+
 
 --
 -- Table structure for table `users`
@@ -197,3 +203,7 @@ CREATE TABLE IF NOT EXISTS `Role` (
   UNIQUE KEY (`role`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+INSERT INTO `role` (`roleId`, `role`, `datecreated`, `dateupdated`) VALUES
+(2, 'Admin', '2024-07-07 18:20:40', '2024-07-07 18:20:40'),
+(3, 'Instructor', '2024-07-07 18:20:40', '2024-07-07 18:20:40'),
+(4, 'Student', '2024-07-07 18:20:40', '2024-07-07 18:20:40');

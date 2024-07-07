@@ -4,7 +4,7 @@
 
 $responseId=mysqli_real_escape_string($conn,$_GET["responseId"]);
 
-$spot_response= "SELECT * FROM `responses` WHERE responseId= '$responseId'LIMIT 1" ;
+$spot_response= "SELECT * FROM responses WHERE responseId= '$responseId'LIMIT 1" ;
 
 
 //there is no loop because only one time is picked
@@ -188,4 +188,3 @@ p2{
 
 
 <?php include_once("templates/footer.php");?>
-

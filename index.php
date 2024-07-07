@@ -74,7 +74,7 @@ font-style: oblique;
     <img src="Images/People/pp2 (2).jpg"width=30% class="rounded" >
     <img src="Images/People/pp3 (2).jpg"width=30% class="rounded" >
 
-
+    
  </div>
  
  

@@ -15,12 +15,12 @@ if(isset($_POST["SignUp"])){
     $fullName=mysqli_real_escape_string($conn,addslashes($_POST["fullname"]));
     $UserName=mysqli_real_escape_string($conn,addslashes($_POST["Username"]));
     $EmailAddress=mysqli_real_escape_string($conn,addslashes($_POST["EmailAddress"]));
-    $UserType=mysqli_real_escape_string($conn,addslashes($_POST["UserType"]));
     $Password=mysqli_real_escape_string($conn,addslashes($_POST["password"]));
-    $RepeatPassword=mysqli_real_escape_string($conn,addslashes($_POST["Repeat Password"]));
+    
+    $ConfirmPassword=mysqli_real_escape_string($conn,addslashes($_POST["confirm Password"]));
     
     //Verifying if the password and the confirm password are similar
-    if($password!=$RepeatPassword) {
+    if($password!=$ConfirmPassword) {
         header("Location:SignUp.php");
         exit();
     }
@@ -29,7 +29,7 @@ if(isset($_POST["SignUp"])){
     $hash_password=password_hash($RepeatPassword,PASSWORD_DEFAULT);
     
     //inserting data into SignUp table
-    $user_insert="INSERT INTO signup(fullname,Username,EmailAddress,UserType,password,datecreated)VALUES('$fullName','$UserName','$EmailAddress','$UserType','$password_hash',UNIX_TIMESTAMP())";
+    $user_insert="INSERT INTO signup(fullname,Username,EmailAddress,password,datecreated)VALUES('$fullName','$UserName','$EmailAddress','$password_hash',UNIX_TIMESTAMP())";
 
      //Executing the sql query
      if($conn->query($user_insert)===TRUE){
