@@ -112,6 +112,6 @@ if(isset($_POST["SignUp"])){
     <p class="note">Already have an account? <a href="SignIn.php">Sign In</a></p>
   </div>
 </body>
-</html>
+
 
 <?php require_once("templates/footer.php");?>
