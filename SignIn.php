@@ -1,12 +1,10 @@
 
-<?php require_once("includes/db_connect.php");
- include_once("templates/header.php");
+<?php
+require_once("includes/db_connect.php");
+include_once("templates/header.php");
 include_once("templates/nav.php");
-  
-  
-  
-  
-  //SignIn process
+
+//SignIn process
 if(isset($_POST["signIn"])){
 
     //Variable declaration
@@ -30,8 +28,8 @@ if(isset($_POST["signIn"])){
  
        //Verify if the entered_password is identical to the stored_password
        if(password_verify($entered_password,$stored_password)){
-          //If the two passwords match,red-direct to view_respinses.php
-          header("Location:view_responses.php");
+          //If the two passwords match,red-direct to index.php
+          header("Location:index.php");
           exit();
        }
        else{
@@ -50,62 +48,64 @@ if(isset($_POST["signIn"])){
  
     }
   
-  
-  
-  
-  
-  ?>  
-    <style>
-
-        body{
-background-image: url(Images/Background/bb2.jpg);
-        }
-
-        .header-h{
-            color:lightseagreen;
-            font-size:large;
-        }
-    </style>
+   
+?>
+<style>
+    body {
+        background-image: url(Images/Background/bb2.jpg);
+    }
+    .header-h {
+        color: lightseagreen;
+        font-size: large;
+    }
+    .Sign,p{
+font-size:medium;
+font-weight:bold;
+    }
+</style>
 
 <body>
-<div class= "header-h">
-    <h1>SignIn</h1>
-</div>
-       
-    
-<div class="SignIn">
-<form action=""method="">
+    <div class="header-h">
+        <h1>SignIn</h1>
+    </div>
 
-<div class="imgcontainer">
-<img src="Images/People/img_avatar2.png"alt="Avatar"class="avatar">
-<img src="Images/People/img_avatar6.png"alt="Avatar"class="avatar">
-</div>
+    <div class="SignIn">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+            <?php if (!empty($login_error)) : ?>
+                <div class="message"><?php echo $login_error; ?></div>
+            <?php endif; ?>
 
-<div class="container">
-<label for="username"><b>Username:</label>
-<input type="text"placeholder="Enter Username" name="username"required><br>
+            <div class="imgcontainer">
+                <img src="Images/People/img_avatar2.png" alt="Avatar" class="avatar">
+                <img src="Images/People/img_avatar6.png" alt="Avatar" class="avatar">
+            </div>
 
-<label for="password"><b>Password:</label>
-<input type="password"placeholder="Enter Password"name="password"required>
-<label>
-    <input type="checkbox"checked="checked"name="remember">Remember me
-</label>
+            <div class="container">
+                <label for="emailAddress"><b>Email Address:</b></label>
+                <input type="text" placeholder="Enter Email Address" name="emailAddress" required><br>
 
-<button type="submit">Login</button>
+                <label for="password"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required><br>
 
-<button type="button" class="cancelbutton">Cancel</button>
-    <span class="password"><a href="#">Forgot Password?</a></span>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
 
-
+                <button type="submit">Login</button>
+                <button type="button" class="cancelbutton">Cancel</button>
+                <span class="password"><a href="#">Forgot Password?</a></span>
+            </div>
+        </form>
+        <p class="account-info">Don't have an account? <a href="SignUp.php">Sign Up</a></p>
+        <p class="Sign">Thank you for logging In!</p>
+        </div>
 
     </div>
 
- 
-</form>
-</div>
+    
 
-<div class="container">
-<?php require_once("templates/footer.php");?>
-<div>
 
- 
+    <div class="container">
+        <?php require_once("templates/footer.php");?>
+    </div>
+</body>
