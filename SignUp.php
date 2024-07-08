@@ -1,30 +1,73 @@
 <?php 
+
 require_once("includes/db_connect.php");
 include_once("templates/header.php");
 include_once("templates/nav.php");
 
 if(isset($_POST["SignUp"])){
-  $fullname = mysqli_real_escape_string($conn, $_POST["fullname"]);
-  $username = mysqli_real_escape_string($conn, $_POST["username"]);
-  $emailAddress = mysqli_real_escape_string($conn, $_POST["emailAddress"]);
-  $password = mysqli_real_escape_string($conn, $_POST["password"]);
-  $role = mysqli_real_escape_string($conn, $_POST["roleId"]);
-  $gender = mysqli_real_escape_string($conn, $_POST["genderId"]);
-  $confirmpassword = mysqli_real_escape_string($conn, $_POST["confirmpassword"]);
+  //To preserve data in the form use $SESSION[]
+  $SESSION["fullname"]=$fullname = mysqli_real_escape_string($conn, $_POST["fullname"]);
+  $SESSION["username"] =$username = mysqli_real_escape_string($conn, $_POST["username"]);
+  $SESSION["emailAddress"] =$emailAddress = mysqli_real_escape_string($conn, $_POST["emailAddress"]);
+  $SESSION["password"]=$password = mysqli_real_escape_string($conn, $_POST["password"]);
+  $SESSION["roleId"]=$role = mysqli_real_escape_string($conn, $_POST["roleId"]);
+  $SESSION["genderId"]=$gender = mysqli_real_escape_string($conn, $_POST["genderId"]);
+  $SESSION["Confirmpassword"]=$gender = mysqli_real_escape_string($conn, $_POST["Confirmpassword"]);
+  
+
 
   // Verify email format
   if(!filter_var($emailAddress, FILTER_VALIDATE_EMAIL)){
-    header("Location:?wrong_email_format");
-    exit();
+    $SESSION["wrong_email_format"]="wrong Email format";
+    //There shouldn't be an error
+    $SESSION["error"]=" ";
   }
 
 //verify authorized email domain(gmail.com)
+
+$val_dom=["gmail.com"];
+$em_arr=explode("@",$emailAddress);
+$spot_dom=end($em_arr);
+if(!in_array($spot_dom,$val_dom)){
+
+ $SESSION["invalid_dom"]="Invalid email domain".$spot_dom;
+ $_SESSION["error"]="";
+}
 //verify password and repeat password are identical
+if($password!=$ConfirmPassword) {
+  header("Location:SignUp.php");
+  exit();
+}
+//encrypting password
+$hash_password=password_hash($ConfirmPassword,PASSWORD_DEFAULT);
+    
+
 //verify the password length is between 8-16
 // verify the new email does not exist already
 //verify the new username does not exist already in the database
+
+
 //verify that the fullname contains only letters and a space and aquotation symbol
 
+if(ctype_alpha(str_replace("","",str_replace("\'","",$fullname)))===FALSE){
+
+$_SESSION["nameLetter_err"]="wrong name format";
+$_SESSION["error"]="";
+}
+
+//Inserting data into SignUp table
+//The if(isset($_SESSION["error"] - checks if there is error when data is inserted
+if(isset($_SESSION["error"])){
+$user_insert="INSERT INTO `users` (fullname,username,emailAddress,password,roleId,genderId)VALUES('$fullname','$username','$emailAddress','$password','$role','$gender')";
+
+//executing the sql query
+if($conn->query($user_insert)===TRUE){
+  header("Location:SignUp.php");
+  exit();
+}else{
+  die("Failed to insert new record".$conn->error);
+}
+}
 }
 ?>
   <style>
@@ -56,14 +99,17 @@ if(isset($_POST["SignUp"])){
       <p1>Please fill in this form to create an account </p1>
       <hr>
       <label for="fullname"><b>Fullname:</b></label>
-      <input type="text" name="fullname" id="fullname" maxlength="50" placeholder="Fullname" required><br>
+      <input type="text" name="fullname" id="fullname" maxlength="50" placeholder="Fullname" required <?php if(isset($_SESSION["fullname"])){?> value="<?php print $_SESSION["fullname"]; unset($_SESSION["fullname"]);?>" <?php } ?> autofocus><br>
+      <?php if(isset($_SESSION["nameLetter_err"])){print '<span class="error_form">'.$SESSION["nameLetter_err"].'</span>';unset($_SESSION["nameLetter_err"]);}?>
+
 
       <label for="username"><b>Username:</b></label>
-      <input type="text" name="username" maxlength="10" id="username" placeholder="Username" required><br>
+      <input type="text" name="username" maxlength="10" id="username" placeholder="Username" required <?php if(isset($_SESSION["username"])){?> value="<?php print $_SESSION["username"]; unset($_SESSION["username"]);?>" <?php } ?>><br>
 
       <label for="email"><b>EmailAddress:</b></label>
-      <input type="email" name="emailAddress" maxlength="50" id="emailAddress" placeholder="Email Address" required><br>
-      <?php if(isset($_GET["wrong_email_format"])){print "<span class='error_form'>Wrong email format</span>";}?>
+      <input type="email" name="emailAddress" maxlength="50" id="emailAddress" placeholder="Email Address" required <?php if(isset($_SESSION["emailAddress"])){?> value="<?php print $_SESSION["emailAddress"]; unset($_SESSION["emailAddress"]);?>" <?php } ?>><br>
+
+      <?php if(isset($_SESSION["wrong_email_format"])){print '<span class="error_form">'.$_SESSION["wrong_email_format"].'</span>';unset($_SESSION["wrong_email_format"]);}?>
 
       <label for="genderId">Gender:</label>
       <select name="genderId" id="genderId" required>
@@ -92,7 +138,7 @@ if(isset($_POST["SignUp"])){
       <br>
 
       <label for="password"><b>Password:</b></label>
-      <input type="password" name="password" id="password" maxlength="16" placeholder="Password" required><br>
+      <input type="password" name="password" id="password" maxlength="16" placeholder="Password" required  <?php if(isset($_SESSION["password"])){?> value="<?php print $_SESSION["password"]; unset($_SESSION["password"]);?>" <?php } ?>><br>
 
       <label for="confirmpassword"><b>Confirm Password:</b></label>
       <input type="password" name="confirmpassword" id="confirmpassword" maxlength="16" placeholder="Confirm Password" required><br>
