@@ -2,19 +2,6 @@
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <style>
-
-h1{
-    font-size:xx-large ;
-    text-align:justify;
-    color:darkorange;
-}
-p1{
-    font-size:large;
-   
-}
- </style>
-
 <body class="bgcolor">
 <!---- include_once is used for reusing code-->
     <?php include_once("templates/nav.php");?>
@@ -37,6 +24,7 @@ p1{
 
 </div>
 <!---->
+<!--The team portfolio-->
 <div class="team-member">
     <img src="Images/People/pp46.jpg"alt="Sophia Miller">
     <div class="member-info">
@@ -101,6 +89,7 @@ p1{
     <img src="Images/People/pp10.jpg"width="40%" class="rounded">
 
 </div>
+<!--Createing a collapsible button--->
 <button type="button" class="collapsible">Open Collapsible</button>
 <div class="content">
     <h1 >Our  Journey</h1>

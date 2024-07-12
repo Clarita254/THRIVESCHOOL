@@ -44,32 +44,7 @@
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <style>
-.header-h1{
-    font-size: x-large;
-    color:lightseagreen;
-    text-decoration: underline;
-}
 
-p{
-    font-size: x-large;
-    color:navy;
-}
-
-body{
-    background-image: url(Images/Background/bb2.jpg);
-
-}
-
-p1{
-    color: azure;
-}
-p2{
-    color: black;
-    font-size: medium;
-}
-
-    </style>
 
 
 <body >

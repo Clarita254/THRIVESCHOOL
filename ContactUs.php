@@ -6,28 +6,6 @@
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     
-<style>
-    
-    body{
-        background-color: rgb(255, 240, 243);
-    }
-    h1{
-        font-size: x-large;
-        color: darkorange;
-        font-family:Cambria, Cochin, Georgia, Times,'Times New Roman',serif;
-        text-decoration:underline;
-    }
-p1{
-    font-size: x-large;
-    color: darkmagenta;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-h2{
-    font-size:medium;
-    color:#343a40;
-    font-style: oblique;
-}
-</style>
 
 
 <!--Contact Us Information-->

@@ -1,37 +1,8 @@
 <?php include_once("templates/header.php");?>
+
     
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
-
-<style>
-h1{
-    color:darkmagenta;
-    font-size:large;
-    text-align: justify;
-    text-decoration: underline;
-}
-p{
-    color: rgb(33, 33, 91);
-    font-size:medium;
-    background-color: aliceblue;
-    
-}
-    p4{
-        font-size:medium;
-        background-color: aliceblue;
-    }
-    li{
-        color: navy;
-        font-size: medium;
-    }
-    p2{
-        font-size:medium;
-    }
-    
-    
-
-</style>
 
 
 <body style="background-image: url(Images/Background/bb2.jpg);">

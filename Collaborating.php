@@ -59,8 +59,9 @@ p3{
     
     <div class="containercollaborating">
     <div class="div">
+    <div class="collab-h1">
     <h1 >COLLABORATION</h1>
-    
+</div>
     <h2 >Are you interested in collaborating with others in Tech?</h2>
         
 <div class="images">
