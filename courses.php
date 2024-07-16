@@ -3,7 +3,73 @@
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <style>
+
+body{
+    background-color: rgb(255, 240, 243);
+}
+h1{
+    text-align: left ;
+    color: darkorange;
+    text-decoration: underline;
+
+}
+p{
+    font-size: medium;
+
     
+    font-style: oblique;
+    
+}
+h2{
+    color: darkcyan;
+    font-style: oblique;
+    font-size: large;
+    text-decoration: double;
+}
+p2
+{
+    font-size: medium;
+}
+li{
+    font-size:large;
+    color: navy;
+}
+
+h3{
+color: darkcyan;
+font-style: oblique;
+font-size: large;
+text-decoration: double;
+}
+p3{
+    font-size: medium;
+    
+    font-size:large;
+    font-style: oblique;
+    color: darkorange;
+}
+h4{
+    color: darkorange;
+    font-style: oblique;
+    font-size: large;
+    text-decoration: double;
+
+}
+
+.div{
+    
+    column-count: 3;
+        column-gap: 40px;
+        column-rule-style:solid ;
+        column-rule-style: rule width 1px; 
+        column-rule-color:palevioletred ;
+        column-rule: 1 px solid palevioletred;
+        column-width: 100px;
+column-span: all;
+padding-bottom: 20px;
+}
+        </style>
 
 <body>
     <?php include_once("templates/nav.php");?>

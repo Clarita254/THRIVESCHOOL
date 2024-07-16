@@ -3,55 +3,53 @@
 
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    h1{
+    font-size: x-large;
+    color:purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:underline;
 
-    
-    <style>
+}
+h2{
+    font-size: larger;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: oblique;color: turquoise;
+}
+h3{
+    font-size: larger;
+    font-style: oblique;
+    color:darkorange;
+}
+p{
+    font-size: medium;
+    background-color:lightyellow;
+}
+li{
+    font-size: larger;
+    color: blueviolet;
+}
+.images{
+display:block;
+padding-right: 10px;
 
-        h1{
-            font-size: x-large;
-            color:purple;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-decoration:underline;
+}
+.div{
 
-        }
-        h2{
-            font-size: larger;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: oblique;color: turquoise;
-        }
-        h3{
-            font-size: larger;
-            font-style: oblique;
-            color:darkorange;
-        }
-        p{
-            font-size: medium;
-            background-color:lightyellow;
-        }
-        li{
-            font-size: larger;
-            color: blueviolet;
-        }
-        .images{
-        display:block;
-       padding-right: 10px;
-
-        }
-        .div{
-    
-    column-count: 3;
-        column-gap: 40px;
-        column-rule-style:solid ;
-        column-rule-style: rule width 1px; 
-        column-rule-color:palevioletred ;
-        column-rule: 1 px solid palevioletred;
-        column-width: 100px;
+column-count: 3;
+column-gap: 40px;
+column-rule-style:solid ;
+column-rule-style: rule width 1px; 
+column-rule-color:palevioletred ;
+column-rule: 1 px solid palevioletred;
+column-width: 100px;
 column-span: all;
 
 }
 
 p3{
-    color: azure;
+color: azure;
 }   
     </style>
+
 
 <body >
 
@@ -59,9 +57,7 @@ p3{
     
     <div class="containercollaborating">
     <div class="div">
-    <div class="collab-h1">
     <h1 >COLLABORATION</h1>
-</div>
     <h2 >Are you interested in collaborating with others in Tech?</h2>
         
 <div class="images">

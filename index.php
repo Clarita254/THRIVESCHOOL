@@ -7,7 +7,45 @@
 
 <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<style>
 
+h1{
+    text-align:left;
+   font-size: x-large;
+    color:lightseagreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+   text-decoration: wavy;
+     }
+   h2{
+   
+   text-align:justify;
+   font-family:'Segoe UI', Tahoma, Geneva,Verdana, sans-serif;
+   line-height:25px;
+   font-size:medium;
+   font-style:italic;
+   color:blueviolet;
+   
+   }
+   
+   h3{
+           font-size: medium;
+           font-style: oblique;
+           color: rgb(33, 33, 91);
+        }
+   
+   
+   li{
+   
+   font-size: medium;
+   font-style: oblique; 
+   
+   }
+   
+    .div{
+           padding-bottom:5px;
+       }
+    </style>
 <body class="bgcolor">
 
 

@@ -2,6 +2,18 @@
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<style>
+    h1{
+    font-size:xx-large ;
+    text-align:justify;
+    color:darkorange;
+}
+p1{
+    font-size:large;
+   
+}
+    </style>
+
 <body class="bgcolor">
 <!---- include_once is used for reusing code-->
     <?php include_once("templates/nav.php");?>
