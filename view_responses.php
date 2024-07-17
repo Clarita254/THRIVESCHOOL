@@ -6,7 +6,7 @@
      include_once("templates/nav.php");
 
 
-
+//Deletion process
 if(isset($_GET["DelId"])){
 $DelId=mysqli_real_escape_string($conn,$_GET["DelId"]);
 
@@ -23,6 +23,7 @@ if ($conn->query($del_resp) === TRUE) {
 
 
 ?>
+
 
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 

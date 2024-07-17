@@ -1,5 +1,6 @@
 <?php 
 require_once("includes/db_connect.php");
+//include warning
 include_once("templates/header.php");
 include_once("templates/nav.php");
 
@@ -27,9 +28,9 @@ if(isset($_POST["Update_Details"])) {
     $Intake = mysqli_real_escape_string($conn, addslashes($_POST["Intake"]));
     $Review = mysqli_real_escape_string($conn, addslashes($_POST["Review"]));
     $responseId = mysqli_real_escape_string($conn, addslashes($_POST["responseId"]));
-
+//Update query
     $update_response = "UPDATE responses SET sender_firstname='$firstName', sender_lastname='$lastName', sender_email='$Email_Address', sender_phoneNumber='$PhoneNumber', sender_DOB='$Date_of_Birth', sender_Gender='$Gender', sender_Course='$course', sender_Intake='$Intake', sender_Review='$Review' WHERE responseId='$responseId' LIMIT 1";
-
+//executing the query
     if ($conn->query($update_response) === TRUE) {
         header("Location:view_responses.php");
         exit();
